@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Planning Jain Constuctions</title>
+   
+</head>
+<style>
+    html{
+    background-color: rgba(78, 12, 12, 0.137);
+    
+}
+h1{
+    text-align: center;
+    color: rgb(134, 35, 59);
+    text-decoration-line: underline;
+    
+}
+h2,h3{
+    text-align: center;
+    color: rgb(78, 26, 38);
+}
+h4{
+    text-align: center;
+    font-size: 200%;
+    text-decoration-line: underline;
+}
+form{
+    font-size: 150%;
+}
+</style>
+<body>
+    <h1>BUILDING PLANNING</h1>
+    <h2>Under this, we make set of drawings which consists of <em> floor plan, site plan, cross sections, elevations </em>etc. for the ease of construction at site .</h2>
+    <h3>Fill your requirements below and help us create the best one for you! </h3>
+    
+    <form action="">Required details are followed by *
+        
+        <h4>Requirements</h4>
+        <p>
+            Plot size: * <input type="number" name="plotsize" id="plotsize" required>
+        </p>
+        <p>
+            Number of rooms required: *<input type="number" name="room_no" id="room_no" required>
+        </p>
+        <p>
+            Approximate room size required: *
+            <select name="select" id="select" required>
+                <option value="">--select the room size--</option>
+                <option value="Small">Small </option>
+                <option value="Medium">Medium</option>
+                <option value="Larger">Large</option>
+            </select>
+
+        </p>
+        <p>
+            Number of floors required: * <input type="number" name="floor_no" id="floor_no" required>
+        </p>
+        <p>
+            <Fieldset>
+                <legend>Is there any possibility for renting the house *</legend>
+                Yes <input type="radio" name="rent" id="rent" required>
+                No <input type="radio" name="rent" id="rent" required>
+            </Fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Attached restroom required *</legend>
+                Yes <input type="radio" name="restroom" id="restroom" required>
+                No <input type="radio" name="restroom" id="restroom" required>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Any possibility of adding more rooms in future</legend>
+                Yes <input type="radio" name="add_room" id="add_room">
+                No <input type="radio" name="add_room" id="add_room">
+            </fieldset>
+        </p>
+         <p>
+            Any special requirements <textarea name="sp_req" id="sp_req" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+             <input type="submit" value="Submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+             <input type="reset" value="reset">
+        </p>    
+        
+
+    </form>
+    
+</body>
+</html>
